@@ -16,45 +16,65 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
 
+.text-vertical-center-white {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
 .text-vertical-center h1 {
+    color: #FF4500;
     margin: 0;
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5); 
 }
 
+
+.text-vertical-center-white h1 {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+    font-weight: 700;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.8); 
+}
 /* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
+    border-color:#fff;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: #FF4500;
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: #ff6a32;
 }
 
 .btn-light {
     border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
+    color: #fff;
+    background-color: #FF4500;
+    border-color: #fff;
 }
 
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
+    color: #fff;
+    background-color: #ff6a32;
 }
 
 /* Custom Horizontal Rule */
@@ -104,7 +124,7 @@ hr.small {
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: rgba(200,200,200,.2);
 }
 
 .sidebar-nav li a:active,
@@ -142,6 +162,7 @@ hr.small {
     -ms-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
+    opacity: 0.9;
 }
 
 .toggle {
@@ -183,7 +204,7 @@ hr.small {
 .callout {
     display: table;
     width: 100%;
-    height: 400px;
+    height: 600px;
     color: #fff;
     background: url(../img/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
