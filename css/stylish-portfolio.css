@@ -16,7 +16,13 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+body {
+  background: #DB7769; 
+}
 
+.name {
+    color: #ff6a32;
+}
 
 .text-vertical-center {
     display: table-cell;
@@ -53,20 +59,20 @@ body {
     border-radius: 0;
     border-color:#fff;
     color: #fff;
-    background-color: #FF4500;
+    background-color: #ff6a32;
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: #ff6a32;
+    background-color: #FF4500;
 }
 
 .btn-light {
     border-radius: 0;
     color: #fff;
-    background-color: #FF4500;
+    background-color: #ff6a32;
     border-color: #fff;
 }
 
@@ -74,7 +80,7 @@ body {
 .btn-light:focus,
 .btn-light:active {
     color: #fff;
-    background-color: #ff6a32;
+    background-color: #FF4500;
 }
 
 /* Custom Horizontal Rule */
@@ -118,7 +124,7 @@ hr.small {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999;
+    color: #fff;
 }
 
 .sidebar-nav li a:hover {
@@ -130,7 +136,9 @@ hr.small {
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
+
 }
+
 
 .sidebar-nav > .sidebar-brand {
     height: 55px;
@@ -139,7 +147,7 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999;
+    color: #fff;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -176,42 +184,82 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    /*background: url(../img/.jpg) no-repeat center center scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    margin: 0 auto;
+    left: -70px;
+    /* inline-block space fix */
+}
 /* About */
 
 .about {
-    padding: 50px 0;
+    height: 350px;
+    padding: 100px 0;
 }
 
 /* Services */
 
 .services {
-    padding: 50px 0;
+    padding: 100px 0;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
 
 .service-item {
     margin-bottom: 30px;
 }
-
 /* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 600px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+.display-text {
+    color: #ffffff;
 }
+
+.bg {
+  background: url(../img/bg.jpg) no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 1700px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+@media(max-width:990px){
+    .bg {
+    background: url(../img/bg_phone.jpg) no-repeat center center;
+    }
+}
+
+@media(max-width:768px){
+    .bg {
+    background: url(../img/bg_phone.jpg) no-repeat center center;
+   }
+}
+
+.jumbotron {
+  height: 500px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+}
+
+
 
 /* Portfolio */
 
@@ -252,6 +300,7 @@ hr.small {
         height: 75%;
     }
 }
+
 
 /* Footer */
 
