@@ -24,6 +24,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
+        <script type="text/javascript" src="js/dev.js"></script>
+
   
 
 
@@ -95,13 +97,50 @@
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2 class="display-text">Our Services</h2>
-                    <hr class="small">
+                    <hr class="break">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            <span class="fa-stack fa-4x">
+                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110px" height="110px" viewBox="0 0 258 437" version="1.1">
+                                  <defs>
+                                    <filter id="bolt-inner-shadow">
+                                      <feOffset dx="0" dy="0" />
+                                      <feGaussianBlur
+                                        stdDeviation="8"
+                                        result="offset-blur"
+                                      />
+                                      <feComposite
+                                        operator='out'
+                                        in='SourceGraphic'
+                                        in2='offset-blur'
+                                        result='inverse'
+                                      />
+                                      <feFlood
+                                        flood-color='6B2C22'
+                                        flood-opacity='1'
+                                        result='color'
+                                      />
+                                    
+                                      <!-- Clip color inside shadow -->
+                                      <feComposite
+                                        operator='in'
+                                        in='color'
+                                        in2='inverse'
+                                        result='shadow'
+                                      />
+                                    
+                                      <!-- Put shadow over original object -->
+                                      <feComposite
+                                        operator='over'
+                                        in='shadow'
+                                        in2='SourceGraphic'
+                                      />
+                                    </filter>
+                                  </defs>
+                                  <path d="M12 240.2 L221.733736 6 L165.795158 192.5 L245.547254 191.8 L35.813518 426 L91.7520965 239.5 Z M12 240.2" class="bolt loading">
+                                </svg>
+                               
                             </span>
                                 <h4>
                                     <strong>Ideation</strong>
@@ -113,8 +152,71 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                    <svg version="1.1" width="120" height="120" viewBox="0 0 320 320" fill="none" stroke="#000" stroke-linecap="round"
+                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                      <defs>
+                                        <path id="r1">
+                                          <animate id="p1" attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite"/>
+                                          <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin"/>
+                                        </path>
+                                        <path id="r2">
+                                          <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+1s"/>
+                                          <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+1s"/>
+                                        </path>
+                                        <path id="r3">
+                                          <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+2s"/>
+                                          <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+2s"/>
+                                        </path>
+                                        <path id="r4">
+                                          <animate id="p1" attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+3s"/>
+                                          <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+3s"/>
+                                        </path>
+                                        <path id="r5">
+                                          <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+4s"/>
+                                          <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+4s"/>
+                                        </path>
+                                        <path id="r6">
+                                          <animate attributeName="d" values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0" dur="6s" repeatCount="indefinite" begin="p1.begin+5s"/>
+                                          <animate attributeName="stroke-width" values="0;4;4;4;0" dur="6s" repeatCount="indefinite" begin="p1.begin+5s"/>
+                                        </path>
+                                      </defs>
+                                      <use xlink:href="#r1"/>
+                                      <use xlink:href="#r1" transform="rotate(60 160 160)"/>
+                                      <use xlink:href="#r1" transform="rotate(120 160 160)"/>
+                                      <use xlink:href="#r1" transform="rotate(180 160 160)"/>
+                                      <use xlink:href="#r1" transform="rotate(240 160 160)"/>
+                                      <use xlink:href="#r1" transform="rotate(300 160 160)"/>
+                                      <use xlink:href="#r2" transform="rotate(30 160 160)"/>
+                                      <use xlink:href="#r2" transform="rotate(90 160 160)"/>
+                                      <use xlink:href="#r2" transform="rotate(150 160 160)"/>
+                                      <use xlink:href="#r2" transform="rotate(210 160 160)"/>
+                                      <use xlink:href="#r2" transform="rotate(270 160 160)"/>
+                                      <use xlink:href="#r2" transform="rotate(330 160 160)"/>
+                                      <use xlink:href="#r3"/>
+                                      <use xlink:href="#r3" transform="rotate(60 160 160)"/>
+                                      <use xlink:href="#r3" transform="rotate(120 160 160)"/>
+                                      <use xlink:href="#r3" transform="rotate(180 160 160)"/>
+                                      <use xlink:href="#r3" transform="rotate(240 160 160)"/>
+                                      <use xlink:href="#r3" transform="rotate(300 160 160)"/>
+                                      <use xlink:href="#r4" transform="rotate(30 160 160)"/>
+                                      <use xlink:href="#r4" transform="rotate(90 160 160)"/>
+                                      <use xlink:href="#r4" transform="rotate(150 160 160)"/>
+                                      <use xlink:href="#r4" transform="rotate(210 160 160)"/>
+                                      <use xlink:href="#r4" transform="rotate(270 160 160)"/>
+                                      <use xlink:href="#r4" transform="rotate(330 160 160)"/>
+                                      <use xlink:href="#r5"/>
+                                      <use xlink:href="#r5" transform="rotate(60 160 160)"/>
+                                      <use xlink:href="#r5" transform="rotate(120 160 160)"/>
+                                      <use xlink:href="#r5" transform="rotate(180 160 160)"/>
+                                      <use xlink:href="#r5" transform="rotate(240 160 160)"/>
+                                      <use xlink:href="#r5" transform="rotate(300 160 160)"/>
+                                      <use xlink:href="#r6" transform="rotate(30 160 160)"/>
+                                      <use xlink:href="#r6" transform="rotate(90 160 160)"/>
+                                      <use xlink:href="#r6" transform="rotate(150 160 160)"/>
+                                      <use xlink:href="#r6" transform="rotate(210 160 160)"/>
+                                      <use xlink:href="#r6" transform="rotate(270 160 160)"/>
+                                      <use xlink:href="#r6" transform="rotate(330 160 160)"/>
+                                    </svg>
                             </span>
                                 <h4>
                                     <strong>Design</strong>
@@ -126,9 +228,17 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
+                                 <div class="ideationbg">  
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 670 236">
+  
+                                     <path class="path" stroke="#000000" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="300" stroke-dashoffset="300" fill="none" d="M343.6 75.9v20.3l23.1 21.8-23.1 21.8v20.3l44.6-42.1zM326.4 139.8l-23.1-21.8 23.1-21.8v-20.3l-44.6 42.1 44.6 42.1z"/>
+  
+                                    <path class="path" stroke="#000000" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="500" stroke-dashoffset="500" fill="none" d="M335 38.9c-43.7 0-79.1 35.4-79.1 79.1s35.4 79.1 79.1 79.1 79.1-35.4 79.1-79.1-35.4-79.1-79.1-79.1zM335 182.9c-35.8 0-64.9-29.1-64.9-64.9s29.1-64.9 64.9-64.9 64.9 29.1 64.9 64.9-29.1 64.9-64.9 64.9z"/>
+  
+                                     </svg>
+                                </div>
+                                </span>
                                 <h4>
                                     <strong>Development</strong>
                                 </h4>
@@ -139,8 +249,15 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                <svg viewBox="0 0 160 160" width="120" height="120">
+                                      <circle cx="80" cy="80" r="50" />
+                                      <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
+                                        <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z" fill="#FFF">
+                                          <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="1s" repeatCount="indefinite" />
+                                        </path>
+                                      </g>
+                                    <path d="M 50,0 A 50,50 0 0,0 -50,0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)" />
+                                </svg>
                             </span>
                                 <h4>
                                     <strong>Marketing and Sales</strong>
