@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user scalable=no, width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -24,7 +24,11 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
-        <script type="text/javascript" src="js/dev.js"></script>
+    <script type="text/javascript" src="js/dev.js"></script>
+     <script type="text/javascript" src="js/mute.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico?">  
+
+
 
   
 
@@ -41,6 +45,7 @@
 
 <body>
     <!-- Navigation -->
+  <div class = "menu-adjustment"> 
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -65,14 +70,14 @@
             </li>
         </ul>
     </nav>
+  </div> 
 
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-
-            <video autoplay="" loop="" class="fillWidth fadeIn animated" poster="" id="video-background">
-    <source src="vid/heathrobbins.mp4" type="video/mp4">
-</video>
+            <video autoplay="" loop="" class="fillWidth fadeIn animated" poster="img/" id="video-background">
+                  <source src="vid/heathrobbins.mp4" type="video/mp4">
+           </video> 
         </div>
     </header>
 
@@ -80,9 +85,9 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 class="display-text">Welcome to the online portfolio of <strong class="name">Heath Robbins</strong>.</h2>
-                    <h3 class="display-text"> Lets embark on a creative journey, turning our wildest dreams into digital possibilities. </p>
+                <div class= "opaquebg" class="col-lg-12 text-center">
+                    <h1 class="display-text" class ="welcome">Welcome to the online portfolio of <strong class="name">Heath Robbins</strong>.</h2>
+                    <h3 class="display-text" class ="welcome"> Lets embark on a creative journey, turning our wildest dreams into digital possibilities. </p>
                 </div>
             </div>
             <!-- /.row -->
@@ -96,13 +101,13 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2 class="display-text">Our Services</h2>
+                    <h2 class="display-text">Services</h2>
                     <hr class="break">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                             <span class="fa-stack fa-4x">
-                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110px" height="110px" viewBox="0 0 258 437" version="1.1">
+                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 258 450" version="1.1">
                                   <defs>
                                     <filter id="bolt-inner-shadow">
                                       <feOffset dx="0" dy="0" />
@@ -152,7 +157,7 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                    <svg version="1.1" width="120" height="120" viewBox="0 0 320 320" fill="none" stroke="#000" stroke-linecap="round"
+                                    <svg version="1.1" width="120" height="120" viewBox="0 0 350 300" fill="none" stroke="#000" stroke-linecap="round"
                                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                       <defs>
                                         <path id="r1">
@@ -223,14 +228,15 @@
                                 </h4>
                                 <p> Identity, Color Schemes, Typography, Logotype, Patterns, Web Design</p>
                                 <a href="http://www.heathrob.com/UI-UX-Branding" class="btn btn-light">Learn More</a>
+                                <div class="clearfix"></div>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                 <div class="ideationbg">  
+                                <div class="devbg">  
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 670 236">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300px" viewBox="0 0 640 100">
   
                                      <path class="path" stroke="#000000" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="300" stroke-dashoffset="300" fill="none" d="M343.6 75.9v20.3l23.1 21.8-23.1 21.8v20.3l44.6-42.1zM326.4 139.8l-23.1-21.8 23.1-21.8v-20.3l-44.6 42.1 44.6 42.1z"/>
   
@@ -262,7 +268,7 @@
                                 <h4>
                                     <strong>Marketing and Sales</strong>
                                 </h4>
-                                <p>SEO, B2B Marketing, E-mail Blasts, Social Media, Video Production, Motion Design  </p>
+                                <p>SEO, B2B Marketing, E-mail Blasts, Social Media, Video Production, Motion Design</p>
                                 <a href="http://www.heathrob.com/Motion" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -279,8 +285,12 @@
     <!-- Callout -->
     
     <aside class="text-vertical-center-white">
-            <div class="bg"></div>
-           </div>
+            <div class="bg">
+            </div>
+            <div class="fish">
+            </div> 
+
+
     </aside>
 
     <!-- Portfolio -->
@@ -288,61 +298,61 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2 class ="display-text">Our Clients</h2>
-                    <hr class="small">
+                    <h2 class ="display-text">Clients</h2>
+                    <hr class="large">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="artisan.html">
+                                <a href="http://www.weareartisan.com">
                                     <img class="img-portfolio img-responsive" src="img/artisan.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="womenworking.html">
+                                <a href="http://www.womenworking.com">
                                     <img class="img-portfolio img-responsive" src="img/womenworking.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
+                                <a href="http://www.nycscc.com">
                                     <img class="img-portfolio img-responsive" src="img/nycscc.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
+                                <a href="http://www.jirafe.com">
                                     <img class="img-portfolio img-responsive" src="img/jirafe.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
+                                <a href="http://www.zero-in.com">
                                     <img class="img-portfolio img-responsive" src="img/zeroin.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
+                                <a href="http://www.nycedc.com">
                                     <img class="img-portfolio img-responsive" src="img/nycedc.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
+                                <a href="http://www.carat.com">
                                     <img class="img-portfolio img-responsive" src="img/carat.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
+                                <a href="http://www.multivu.com">
                                     <img class="img-portfolio img-responsive" src="img/multivu.jpg">
                                 </a>
                             </div>
@@ -379,7 +389,7 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Heath Robbins</strong>
                     </h4>
-                    <p>30 Waterside Plaza 17a<br>New York, NY, 10010</p>
+                    <p>85 John Street<br>New York, NY, 10038</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> 917-403-1289</li>
                         <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">info@heathrob.com</a>
@@ -397,7 +407,6 @@
                             <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
-                    <hr class="small">
                     <p class="text-muted">Copyright &copy; Heath Robbins 2016</p>
                 </div>
             </div>
